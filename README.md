@@ -1,6 +1,7 @@
 # Localization.js
-Create multi-language structure with Javascript
+Localization.js is (native) Javascript base Localization library.
 
+##Usage
 
         // Define language elements
         var locales = {
@@ -23,5 +24,13 @@ Create multi-language structure with Javascript
 
 
 #Contribution
+Fork & Pull Request
 
-Fork
+#License
+The MIT License
+
+Create multi-language structure with ASP.NET MVC
+
+https://github.com/yasinkuyu/Localization
+
+Created 2015 Yasin Kuyu - @yasinkuyu
