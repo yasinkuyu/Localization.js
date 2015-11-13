@@ -20,3 +20,8 @@ Create multi-language structure with Javascript
             loc.set(locales);
         
             console.log(loc.get("homepage"));
+
+
+#Contribution
+
+Fork
