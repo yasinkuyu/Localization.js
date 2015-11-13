@@ -5,6 +5,7 @@
  * Localization.js is (native) Javascript base Localization library.
  * Author: Yasin Kuyu (github.com/yasinkuyu)
  * insya.com
+ * v.0.5 source
  */
 (function() {
 
