@@ -68,14 +68,15 @@
     * @param setLang("tr_TR")
     */
     Localization.prototype.setLang = function(lang) {
-        setCookie('lang', lang);
+        setCookie('CacheLang', lang);
+        this.currentLang = lang
     } 
     
     Localization.prototype.set = function(locales) {
         if( typeof locales !== undefined){
             
             // is not defined marge arguments
-            this.locales = mergeArguments(this.locales, locales);
+            this.locales = mergeArguments(locales, this.locales);
         } 
     }
 
