@@ -1,0 +1,39 @@
+{
+  "name": "localization.js",
+  "description": "Create multi-language structure with Javascript",
+  "main": [
+    "localization.min.js"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "utility",
+    "globalization",
+    "internationalization",
+    "multilingualization",
+    "localization",
+    "g11n",
+    "i18n",
+    "m17n",
+    "L10n",
+    "localize",
+    "locale",
+    "cldr",
+    "json",
+    "inheritance",
+    "compiler"
+  ],
+  "authors": [
+    "Yasin Kuyu "
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "private": true
+}
