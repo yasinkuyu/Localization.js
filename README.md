@@ -19,7 +19,8 @@ Localization.js is (native) Javascript base Localization library.
         
         var loc = new Localization();
             loc.set(locales);
-        
+            loc.setLang("tr_TR");
+            
             console.log(loc.get("homepage"));
 
 
