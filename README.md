@@ -38,7 +38,8 @@ Localization.js is (native) Javascript base Localization library. Dynamically ca
         "en_GB": {},
         "en_NZ": {},
         "ar_EG: {}
-}
+        
+        -> loc.setLang("ar_EG");
 
 Language Codes 
 https://msdn.microsoft.com/en-us/library/ms533052(v=vs.85).aspx
