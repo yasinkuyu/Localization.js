@@ -68,7 +68,7 @@
     * @param setLang("tr_TR")
     */
     Localization.prototype.setLang = function(lang) {
-        setCookie('CacheLang', lang);
+        saveData('CacheLang', lang);
         this.currentLang = lang
     } 
     
@@ -106,7 +106,7 @@
     }
 
     function getCurrentLanguage() {
-        var language = this.currentLang || getQueryParam(location.search, 'CacheLang') || getCookie('CacheLang') || getBrowserLanguage();
+        var language = this.currentLang || getQueryParam(location.search, 'CacheLang') || getData('CacheLang') || getBrowserLanguage();
         return rename(language);
     }
 
@@ -153,27 +153,38 @@
                
     }
     
-    function setCookie(name, value) {
-        document.cookie = name + "=" + encodeURIComponent(value);
+    function saveData(name, value) {
+        
+        if(typeof(Storage) !== "undefined") {
+            document.cookie = name + "=" + encodeURIComponent(value);
+        } else {
+            localStorage.setItem(name, value);
+        }
     }
 
-    function getCookie(name) {
-        var arg = name + "=",
-            i = 0,
-            j = 0,
-            index;
-        while (i < document.cookie.length) {
-            j = i + arg.length;
-            if (document.cookie.substring(i, j) === arg) {
-                return getCookieValue.call(this, j);
+    function getData(name) {
+        
+        if(typeof(Storage) !== "undefined") {
+            var arg = name + "=",
+                i = 0,
+                j = 0,
+                index;
+            while (i < document.cookie.length) {
+                j = i + arg.length;
+                if (document.cookie.substring(i, j) === arg) {
+                    return getCookieValue.call(this, j);
+                }
+                index = document.cookie.indexOf(" ", i);
+                if (index === -1) {
+                    return null;
+                }
+                i = 1 + index;
             }
-            index = document.cookie.indexOf(" ", i);
-            if (index === -1) {
-                return null;
-            }
-            i = 1 + index;
+            return null;
+        } else {
+            return localStorage.getItem(name)
         }
-        return null;
+
     }
 
     function getCookieValue(offset) {
