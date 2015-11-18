@@ -13,16 +13,9 @@
     "m17n",
     "L10n",
     "localize",
-    "locale",
-    "cldr",
-    "json",
-    "inheritance",
-    "compiler"
+    "locale"
   ],
   "main": "localization.min.js",
-  "files": [
-    "js/localization.min.js"
-  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/yasinkuyu/LocalizationJs.git"
