@@ -1,13 +1,9 @@
 {
   "name": "localizationJs",
   "description": "Create multi-language structure with Javascript",
+  "version": "0.5",
   "main": [
     "localization.min.js"
-  ],
-  "moduleType": [
-    "amd",
-    "globals",
-    "node"
   ],
   "keywords": [
     "utility",
@@ -21,10 +17,7 @@
     "L10n",
     "localize",
     "locale",
-    "cldr",
-    "json",
-    "inheritance",
-    "compiler"
+    "cldr"
   ],
   "authors": [
     "Yasin Kuyu "
