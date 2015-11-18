@@ -1,5 +1,5 @@
 {
-  "name": "localization.js",
+  "name": "localizationJs",
   "description": "Create multi-language structure with Javascript",
   "main": [
     "localization.min.js"
@@ -34,6 +34,5 @@
     "**/.*",
     "node_modules",
     "bower_components"
-  ],
-  "private": true
+  ]
 }
