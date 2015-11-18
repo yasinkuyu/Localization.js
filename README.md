@@ -1,7 +1,7 @@
-# LocalizationJs
+## LocalizationJs
 LocalizationJs is (native) Javascript base Localization library. Dynamically can define an unlimited number of languages. 
         
-##Simple Usage
+###Simple Usage
 
         // Define language elements
         var locales = {
@@ -23,7 +23,7 @@ LocalizationJs is (native) Javascript base Localization library. Dynamically can
             
             console.log(loc.get("homepage"));
 
-#Dynamically
+###Dynamically
         "tr_TR": {
              "homepage": "Anasayfa",
              "info": "Bilgi",
@@ -41,10 +41,10 @@ LocalizationJs is (native) Javascript base Localization library. Dynamically can
         
         -> loc.setLang("ar_EG");
 
-Language Codes 
+###Language Codes 
 https://msdn.microsoft.com/en-us/library/ms533052(v=vs.85).aspx
 
-#RTL Support (Right to Left)
+###RTL Support (Right to Left)
 
         "ar_EG": {
             "rtl": true,
@@ -56,10 +56,10 @@ https://msdn.microsoft.com/en-us/library/ms533052(v=vs.85).aspx
            console.log("Right to left language");
         }
 
-#Contribution
+##Contribution
 Fork & Pull Request
 
-#License
+###License
 The MIT License
 
 Create multi-language structure with ASP.NET MVC
