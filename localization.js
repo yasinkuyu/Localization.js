@@ -134,9 +134,25 @@
         if (lang.length == 1) {
             lang = lang[0].split('-');
         }
-        return lang[0].toLowerCase() + '_' + lang[1].toUpperCase();
+        return lowerCase(lang[0]) + '_' + upperCase(lang[1]);
     }
 
+    function upperCase(value){
+        
+        if(value != null){
+            return value.toUpperCase();    
+        }
+        
+    }
+    
+    function lowerCase(value){
+ 
+        if(value != null){
+            return value.toLowerCase();    
+        }
+               
+    }
+    
     function setCookie(name, value) {
         document.cookie = name + "=" + encodeURIComponent(value);
     }
