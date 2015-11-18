@@ -1,5 +1,11 @@
 ## LocalizationJs
 LocalizationJs is (native) Javascript base Localization library. Dynamically can define an unlimited number of languages. 
+    
+### Install
+
+        bower install localization-js
+        
+        <script type="text/javascript" src="bower_components/localization-js/localization.min.js"></script>
         
 ###Simple Usage
 
