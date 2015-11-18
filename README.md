@@ -9,6 +9,7 @@ LocalizationJs is (native) Javascript base Localization library. Dynamically can
         
 ###Simple Usage
 
+        // <script type="text/javascript" src="bower_components/localization-js/localization.min.js"></script>
         // Define language elements
         var locales = {
             "tr_TR": {
